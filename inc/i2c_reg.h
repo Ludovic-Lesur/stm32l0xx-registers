@@ -8,6 +8,9 @@
 #ifndef __I2C_REG_H__
 #define __I2C_REG_H__
 
+#ifndef STM32L0XX_REGISTERS_DISABLE_FLAGS_FILE
+#include "stm32l0xx_registers_flags.h"
+#endif
 #include "types.h"
 
 /*** I2C REG macros ***/
