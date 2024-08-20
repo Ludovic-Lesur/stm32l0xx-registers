@@ -32,7 +32,7 @@
 /*** GPIO REG structures ***/
 
 /*!******************************************************************
- * \enum GPIO_registers_t
+ * \struct GPIO_registers_t
  * \brief GPIO registers map.
  *******************************************************************/
 typedef struct {

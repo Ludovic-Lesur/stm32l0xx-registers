@@ -18,7 +18,7 @@
 /*** EXTI REG structures ***/
 
 /*!******************************************************************
- * \enum EXTI_registers_t
+ * \struct EXTI_registers_t
  * \brief EXTI registers map.
  *******************************************************************/
 typedef struct {

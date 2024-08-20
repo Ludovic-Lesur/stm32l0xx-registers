@@ -18,7 +18,7 @@
 /*** SYSCFG REG structures ***/
 
 /*!******************************************************************
- * \enum SYSCFG_registers_t
+ * \struct SYSCFG_registers_t
  * \brief SYSCFG registers map.
  *******************************************************************/
 typedef struct {

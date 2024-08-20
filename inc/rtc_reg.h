@@ -18,7 +18,7 @@
 /*** RTC REG structures ***/
 
 /*!******************************************************************
- * \enum RTC_registers_t
+ * \struct RTC_registers_t
  * \brief RTC registers map.
  *******************************************************************/
 typedef struct {

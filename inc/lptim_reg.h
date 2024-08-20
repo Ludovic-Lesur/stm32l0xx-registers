@@ -18,7 +18,7 @@
 /*** LPTIM REG structures ***/
 
 /*!******************************************************************
- * \enum LPTIM_registers_t
+ * \struct LPTIM_registers_t
  * \brief LPTIM registers map.
  *******************************************************************/
 typedef struct {

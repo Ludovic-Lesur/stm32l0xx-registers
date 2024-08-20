@@ -24,7 +24,7 @@
 /*** SPI REG structures ***/
 
 /*!******************************************************************
- * \enum SPI_registers_t
+ * \struct SPI_registers_t
  * \brief SPI registers map.
  *******************************************************************/
 typedef struct {

@@ -18,7 +18,7 @@
 /*** AES REG structures ***/
 
 /*!******************************************************************
- * \enum AES_registers_t
+ * \struct AES_registers_t
  * \brief AES registers map.
  *******************************************************************/
 typedef struct {

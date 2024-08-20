@@ -27,7 +27,7 @@
 /*** I2C REG structures ***/
 
 /*!******************************************************************
- * \enum I2C_registers_t
+ * \struct I2C_registers_t
  * \brief I2C registers map.
  *******************************************************************/
 typedef struct {

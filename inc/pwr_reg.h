@@ -18,7 +18,7 @@
 /*** PWR REG structures ***/
 
 /*!******************************************************************
- * \enum PWR_registers_t
+ * \struct PWR_registers_t
  * \brief PWR registers map.
  *******************************************************************/
 typedef struct {

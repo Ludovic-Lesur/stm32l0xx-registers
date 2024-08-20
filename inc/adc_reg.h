@@ -30,7 +30,7 @@
 /*** ADC REG structures ***/
 
 /*!******************************************************************
- * \enum ADC_registers_t
+ * \struct ADC_registers_t
  * \brief ADC registers map.
  *******************************************************************/
 typedef struct {

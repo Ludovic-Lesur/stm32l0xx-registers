@@ -28,7 +28,7 @@
 /*** USART REG structures ***/
 
 /*!******************************************************************
- * \enum USART_registers_t
+ * \struct USART_registers_t
  * \brief USART registers map.
  *******************************************************************/
 typedef struct {

@@ -18,7 +18,7 @@
 /*** DMA REG structures ***/
 
 /*!******************************************************************
- * \enum DMA_channel_registers_t
+ * \struct DMA_channel_registers_t
  * \brief DMA channel registers map.
  *******************************************************************/
 typedef struct {
@@ -30,7 +30,7 @@ typedef struct {
 } DMA_channel_registers_t;
 
 /*!******************************************************************
- * \enum DMA_registers_t
+ * \struct DMA_registers_t
  * \brief DMA registers map.
  *******************************************************************/
 typedef struct {

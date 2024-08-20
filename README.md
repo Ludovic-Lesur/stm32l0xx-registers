@@ -1,6 +1,6 @@
 # Description
 
-This repository contains the registers address definition of the STM32L0xx MCUs peripherals.
+This repository contains the **registers address** definition of the STM32L0xx MCUs peripherals.
 
 # Compilation flags
 

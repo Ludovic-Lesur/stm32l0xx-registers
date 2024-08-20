@@ -35,7 +35,7 @@
 /*** FLASH REG structures ***/
 
 /*!******************************************************************
- * \enum FLASH_registers_t
+ * \struct FLASH_registers_t
  * \brief FLASH registers map.
  *******************************************************************/
 typedef struct {

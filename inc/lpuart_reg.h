@@ -18,7 +18,7 @@
 /*** LPUART REG structures ***/
 
 /*!******************************************************************
- * \enum LPUART_registers_t
+ * \struct LPUART_registers_t
  * \brief LPUART registers map.
  *******************************************************************/
 typedef struct {

@@ -18,7 +18,7 @@
 /*** IWDG REG structures ***/
 
 /*!******************************************************************
- * \enum IWDG_registers_t
+ * \struct IWDG_registers_t
  * \brief IWDG registers map.
  *******************************************************************/
 typedef struct {

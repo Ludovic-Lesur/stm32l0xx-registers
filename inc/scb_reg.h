@@ -18,7 +18,7 @@
 /*** SCB REG structures ***/
 
 /*!******************************************************************
- * \enum SCB_registers_t
+ * \struct SCB_registers_t
  * \brief SCB registers map.
  *******************************************************************/
 typedef struct {

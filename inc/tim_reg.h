@@ -32,7 +32,7 @@
 /*** TIM REG structures ***/
 
 /*!******************************************************************
- * \enum TIM_registers_t
+ * \struct TIM_registers_t
  * \brief TIM registers map.
  *******************************************************************/
 typedef struct {

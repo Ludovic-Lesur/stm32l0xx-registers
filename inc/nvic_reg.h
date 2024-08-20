@@ -18,7 +18,7 @@
 /*** NVIC REG structures ***/
 
 /*!******************************************************************
- * \enum NVIC_registers_t
+ * \struct NVIC_registers_t
  * \brief NVIC registers map.
  *******************************************************************/
 typedef struct {
