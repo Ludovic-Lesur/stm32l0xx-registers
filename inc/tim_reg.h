@@ -42,8 +42,14 @@ typedef struct {
 	volatile uint32_t DIER;    			// DMA interrupt enable register.
 	volatile uint32_t SR;    			// Status register.
 	volatile uint32_t EGR;    			// Event generation register.
-	volatile uint32_t CCMR1;    		// Capture/compare mode register 1.
-	volatile uint32_t CCMR2;    		// Capture/compare mode register 2.
+	union {
+		struct {
+			volatile uint32_t CCMR1;	// Capture/compare mode register 1.
+			volatile uint32_t CCMR2;	// Capture/compare mode register 2.
+		};
+		volatile uint32_t CCMRx[2];		// Capture/compare mode registers.
+	};
+
 	volatile uint32_t CCER;    			// Capture/compare enable register.
 	volatile uint32_t CNT;    			// Counter register.
 	volatile uint32_t PSC;    			// Prescaler register.
