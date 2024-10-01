@@ -13,19 +13,19 @@
 /*** ADC REG macros ***/
 
 // Peripheral base address.
-#define ADC1					((ADC_registers_t*) ((uint32_t) 0x40012400))
-// Temperature sensor calibration values address.
-#define TS_VCC_CALIB_MV			3000
-#define TS_CAL1_ADDR			((uint16_t*) ((uint32_t) 0x1FF8007A))
-#define TS_CAL1					((int32_t) (*TS_CAL1_ADDR))
-#define TS_CAL1_TEMP			((int32_t) 30)
-#define TS_CAL2_ADDR			((uint16_t*) ((uint32_t) 0x1FF8007E))
-#define TS_CAL2					((int32_t) (*TS_CAL2_ADDR))
-#define TS_CAL2_TEMP			((int32_t) 130)
-// Internal voltage reference calibration value address.
-#define VREFINT_VCC_CALIB_MV	3000
-#define VREFINT_CAL_ADDR		((uint16_t*) ((uint32_t) 0x1FF80078))
-#define VREFINT_CAL				((uint32_t) (*VREFINT_CAL_ADDR))
+#define ADC1						((ADC_registers_t*) ((uint32_t) 0x40012400))
+// Temperature sensor calibration values.
+#define ADC_TS_VCC_CALIB_MV			((int32_t) 3000)
+#define ADC_TS_CAL1_ADDR			((uint16_t*) ((uint32_t) 0x1FF8007A))
+#define ADC_TS_CAL1					((int32_t) (*ADC_TS_CAL1_ADDR))
+#define ADC_TS_CAL1_TEMP			((int32_t) 30)
+#define ADC_TS_CAL2_ADDR			((uint16_t*) ((uint32_t) 0x1FF8007E))
+#define ADC_TS_CAL2					((int32_t) (*ADC_TS_CAL2_ADDR))
+#define ADC_TS_CAL2_TEMP			((int32_t) 130)
+// Internal voltage reference calibration values.
+#define ADC_VREFINT_VCC_CALIB_MV	((int32_t) 3000)
+#define ADC_VREFINT_CAL_ADDR		((uint16_t*) ((uint32_t) 0x1FF80078))
+#define ADC_VREFINT_CAL				((int32_t) (*ADC_VREFINT_CAL_ADDR))
 
 /*** ADC REG structures ***/
 
