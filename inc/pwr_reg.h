@@ -13,7 +13,7 @@
 /*** PWR REG macros ***/
 
 // Peripheral base address.
-#define PWR		((PWR_registers_t*) ((uint32_t) 0x40007000))
+#define PWR     ((PWR_registers_t*) ((uint32_t) 0x40007000))
 
 /*** PWR REG structures ***/
 
@@ -22,8 +22,8 @@
  * \brief PWR registers map.
  *******************************************************************/
 typedef struct {
-	volatile uint32_t CR;	// Power control register.
-	volatile uint32_t CSR;	// Power control and status register.
+    volatile uint32_t CR;   // Power control register.
+    volatile uint32_t CSR;  // Power control and status register.
 } PWR_registers_t;
 
 #endif /* __PWR_REG_H__ */

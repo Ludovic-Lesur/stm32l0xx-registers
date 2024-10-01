@@ -13,7 +13,7 @@
 /*** EXTI REG macros ***/
 
 // Peripheral base address.
-#define EXTI	((EXTI_registers_t*) ((uint32_t) 0x40010400))
+#define EXTI    ((EXTI_registers_t*) ((uint32_t) 0x40010400))
 
 /*** EXTI REG structures ***/
 
@@ -22,12 +22,12 @@
  * \brief EXTI registers map.
  *******************************************************************/
 typedef struct {
-	volatile uint32_t IMR;    	// EXTI interrupt mask register.
-	volatile uint32_t EMR;    	// EXTI event mask register.
-	volatile uint32_t RTSR;    	// EXTI rising edge trigger selection register.
-	volatile uint32_t FTSR;    	// EXTI falling edge trigger selection register.
-	volatile uint32_t SWIER;    // EXTI software interrupt event register.
-	volatile uint32_t PR;    	// EXTI pending register.
+    volatile uint32_t IMR;      // EXTI interrupt mask register.
+    volatile uint32_t EMR;      // EXTI event mask register.
+    volatile uint32_t RTSR;     // EXTI rising edge trigger selection register.
+    volatile uint32_t FTSR;     // EXTI falling edge trigger selection register.
+    volatile uint32_t SWIER;    // EXTI software interrupt event register.
+    volatile uint32_t PR;       // EXTI pending register.
 } EXTI_registers_t;
 
 #endif /* __EXTI_REG_H__ */
