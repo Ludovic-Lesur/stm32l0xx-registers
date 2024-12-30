@@ -1,21 +1,21 @@
 /*
- * aes_reg.h
+ * aes_registers.h
  *
  *  Created on: 19 dec. 2018
  *      Author: Ludo
  */
 
-#ifndef __AES_REG_H__
-#define __AES_REG_H__
+#ifndef __AES_REGISTERS_H__
+#define __AES_REGISTERS_H__
 
 #include "types.h"
 
-/*** AES REG macros ***/
+/*** AES REGISTERS macros ***/
 
 // Peripheral base address.
 #define AES     ((AES_registers_t*) ((uint32_t) 0x40026000))
 
-/*** AES REG structures ***/
+/*** AES REGISTERS structures ***/
 
 /*!******************************************************************
  * \struct AES_registers_t
@@ -46,4 +46,4 @@ typedef struct {
     };
 } AES_registers_t;
 
-#endif /* __AES_REG_H__ */
+#endif /* __AES_REGISTERS_H__ */

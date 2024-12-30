@@ -1,16 +1,16 @@
 /*
- * adc_reg.h
+ * adc_registers.h
  *
  *  Created on: 05 may 2018
  *      Author: Ludo
  */
 
-#ifndef __ADC_REG_H__
-#define __ADC_REG_H__
+#ifndef __ADC_REGISTERS_H__
+#define __ADC_REGISTERS_H__
 
 #include "types.h"
 
-/*** ADC REG macros ***/
+/*** ADC REGISTERS macros ***/
 
 // Peripheral base address.
 #define ADC1                        ((ADC_registers_t*) ((uint32_t) 0x40012400))
@@ -27,7 +27,7 @@
 #define ADC_VREFINT_CAL_ADDR        ((uint16_t*) ((uint32_t) 0x1FF80078))
 #define ADC_VREFINT_CAL             ((int32_t) (*ADC_VREFINT_CAL_ADDR))
 
-/*** ADC REG structures ***/
+/*** ADC REGISTERS structures ***/
 
 /*!******************************************************************
  * \struct ADC_registers_t
@@ -53,4 +53,4 @@ typedef struct {
     volatile uint32_t CCR;              // ADC common configuration register.
 } ADC_registers_t;
 
-#endif /* __ADC_REG_H__ */
+#endif /* __ADC_REGISTERS_H__ */

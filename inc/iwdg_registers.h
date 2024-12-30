@@ -1,21 +1,21 @@
 /*
- * iwdg_reg.h
+ * iwdg_registers.h
  *
  *  Created on: 30 mar. 2018
  *      Author: Ludo
  */
 
-#ifndef __IWDG_REG_H__
-#define __IWDG_REG_H__
+#ifndef __IWDG_REGISTERS_H__
+#define __IWDG_REGISTERS_H__
 
 #include "types.h"
 
-/*** IWDG REG macros ***/
+/*** IWDG REGISTERS macros ***/
 
 // Peripheral base address.
 #define IWDG    ((IWDG_registers_t*) ((uint32_t) 0x40003000))
 
-/*** IWDG REG structures ***/
+/*** IWDG REGISTERS structures ***/
 
 /*!******************************************************************
  * \struct IWDG_registers_t
@@ -29,4 +29,4 @@ typedef struct {
     volatile uint32_t WINR;     // IWDG window register.
 } IWDG_registers_t;
 
-#endif /* __IWDG_REG_H___ */
+#endif /* __IWDG_REGISTERS_H___ */

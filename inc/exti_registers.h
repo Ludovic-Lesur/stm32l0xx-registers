@@ -1,21 +1,21 @@
 /*
- * exti_reg.h
+ * exti_registers.h
  *
  *  Created on: 18 jun. 2018
  *      Author: Ludo
  */
 
-#ifndef __EXTI_REG_H__
-#define __EXTI_REG_H__
+#ifndef __EXTI_REGISTERS_H__
+#define __EXTI_REGISTERS_H__
 
 #include "types.h"
 
-/*** EXTI REG macros ***/
+/*** EXTI REGISTERS macros ***/
 
 // Peripheral base address.
 #define EXTI    ((EXTI_registers_t*) ((uint32_t) 0x40010400))
 
-/*** EXTI REG structures ***/
+/*** EXTI REGISTERS structures ***/
 
 /*!******************************************************************
  * \struct EXTI_registers_t
@@ -30,4 +30,4 @@ typedef struct {
     volatile uint32_t PR;       // EXTI pending register.
 } EXTI_registers_t;
 
-#endif /* __EXTI_REG_H__ */
+#endif /* __EXTI_REGISTERS_H__ */

@@ -1,19 +1,19 @@
 /*
- * spi_reg.h
+ * spi_registers.h
  *
  *  Created on: 19 jun. 2018
  *      Author: Ludo
  */
 
-#ifndef __SPI_REG_H__
-#define __SPI_REG_H__
+#ifndef __SPI_REGISTERS_H__
+#define __SPI_REGISTERS_H__
 
 #ifndef STM32L0XX_REGISTERS_DISABLE_FLAGS_FILE
 #include "stm32l0xx_registers_flags.h"
 #endif
 #include "types.h"
 
-/*** SPI REG macros ***/
+/*** SPI REGISTERS macros ***/
 
 // Peripherals base address.
 #define SPI1    ((SPI_registers_t*) ((uint32_t) 0x40013000))
@@ -21,7 +21,7 @@
 #define SPI2    ((SPI_registers_t*) ((uint32_t) 0x40003800))
 #endif
 
-/*** SPI REG structures ***/
+/*** SPI REGISTERS structures ***/
 
 /*!******************************************************************
  * \struct SPI_registers_t
@@ -39,4 +39,4 @@ typedef struct {
     volatile uint32_t I2SPR;    // SPI I2S prescaler register.
 } SPI_registers_t;
 
-#endif /* __SPI_REG_H__ */
+#endif /* __SPI_REGISTERS_H__ */

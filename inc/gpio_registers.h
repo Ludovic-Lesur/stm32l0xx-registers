@@ -1,19 +1,19 @@
 /*
- * gpio_reg.h
+ * gpio_registers.h
  *
  *  Created on: 26 apr. 2018
  *      Author: Ludo
  */
 
-#ifndef __GPIO_REG_H__
-#define __GPIO_REG_H__
+#ifndef __GPIO_REGISTERS_H__
+#define __GPIO_REGISTERS_H__
 
 #ifndef STM32L0XX_REGISTERS_DISABLE_FLAGS_FILE
 #include "stm32l0xx_registers_flags.h"
 #endif
 #include "types.h"
 
-/*** GPS REG macros ***/
+/*** GPS REGISTERS macros ***/
 
 // Peripherals base address.
 #define GPIOA   ((GPIO_registers_t*) ((uint32_t) 0x50000000))
@@ -29,7 +29,7 @@
 #define GPIOH   ((GPIO_registers_t*) ((uint32_t) 0x50001C00))
 #endif
 
-/*** GPIO REG structures ***/
+/*** GPIO REGISTERS structures ***/
 
 /*!******************************************************************
  * \struct GPIO_registers_t
@@ -49,4 +49,4 @@ typedef struct {
     volatile uint32_t BRR;      // GPIO port bit reset register.
 } GPIO_registers_t;
 
-#endif /* __GPIO_REG_H__ */
+#endif /* __GPIO_REGISTERS_H__ */

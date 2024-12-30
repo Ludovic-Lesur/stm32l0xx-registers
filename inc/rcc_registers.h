@@ -1,21 +1,21 @@
 /*
- * rcc_reg.h
+ * rcc_registers.h
  *
  *  Created on: 26 apr. 2018
  *      Author: Ludo
  */
 
-#ifndef __RCC_REG_H__
-#define __RCC_REG_H__
+#ifndef __RCC_REGISTERS_H__
+#define __RCC_REGISTERS_H__
 
 #include "types.h"
 
-/*** RCC REG macros ***/
+/*** RCC REGISTERS macros ***/
 
 // Peripheral base address.
 #define RCC     ((RCC_registers_t*) ((uint32_t) 0x40021000))
 
-/*** RCC REG structures ***/
+/*** RCC REGISTERS structures ***/
 
 /*!******************************************************************
  * \struct RCC_registers_t
@@ -45,4 +45,4 @@ typedef struct {
     volatile uint32_t CSR;          // RCC control and status register.
 } RCC_registers_t;
 
-#endif /* __RCC_REG_H__ */
+#endif /* __RCC_REGISTERS_H__ */

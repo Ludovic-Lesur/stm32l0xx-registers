@@ -1,19 +1,19 @@
 /*
- * tim_reg.h
+ * tim_registers.h
  *
  *  Created on: 03 may 2018
  *      Author: Ludo
  */
 
-#ifndef __TIM_REG_H__
-#define __TIM_REG_H__
+#ifndef __TIM_REGISTERS_H__
+#define __TIM_REGISTERS_H__
 
 #ifndef STM32L0XX_REGISTERS_DISABLE_FLAGS_FILE
 #include "stm32l0xx_registers_flags.h"
 #endif
 #include "types.h"
 
-/*** TIM REG macros ***/
+/*** TIM REGISTERS macros ***/
 
 // Peripherals base address.
 #define TIM2    ((TIM_registers_t*) ((uint32_t) 0x40000000))
@@ -29,7 +29,7 @@
 #define TIM7    ((TIM_registers_t*) ((uint32_t) 0x40001400))
 #endif
 
-/*** TIM REG structures ***/
+/*** TIM REGISTERS structures ***/
 
 /*!******************************************************************
  * \struct TIM_registers_t
@@ -70,4 +70,4 @@ typedef struct {
     volatile uint32_t OR;               // Option register.
 } TIM_registers_t;
 
-#endif /* __TIM_REG_H__ */
+#endif /* __TIM_REGISTERS_H__ */

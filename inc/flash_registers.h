@@ -1,19 +1,19 @@
 /*
- * flash_reg.h
+ * flash_registers.h
  *
  *  Created on: 19 jun. 2018
  *      Author: Ludo
  */
 
-#ifndef __FLASH_REG_H__
-#define __FLASH_REG_H__
+#ifndef __FLASH_REGISTERS_H__
+#define __FLASH_REGISTERS_H__
 
 #ifndef STM32L0XX_REGISTERS_DISABLE_FLAGS_FILE
 #include "stm32l0xx_registers_flags.h"
 #endif
 #include "types.h"
 
-/*** FLASH REG macros ***/
+/*** FLASH REGISTERS macros ***/
 
 // Peripheral base address.
 #define FLASH                   ((FLASH_registers_t*) ((uint32_t) 0x40022000))
@@ -32,7 +32,7 @@
 #define EEPROM_SIZE_BYTES       6144
 #endif
 
-/*** FLASH REG structures ***/
+/*** FLASH REGISTERS structures ***/
 
 /*!******************************************************************
  * \struct FLASH_registers_t
@@ -52,4 +52,4 @@ typedef struct {
     volatile uint32_t WRPROT2;      // NVM interface write protection register 2.
 } FLASH_registers_t;
 
-#endif /* __FLASH_REG_H__ */
+#endif /* __FLASH_REGISTERS_H__ */

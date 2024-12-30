@@ -1,21 +1,21 @@
 /*
- * scb_reg.h
+ * scb_registers.h
  *
  *  Created on: 05 may 2018
  *      Author: Ludo
  */
 
-#ifndef __SCB_REG_H__
-#define __SCB_REG_H__
+#ifndef __SCB_REGISTERS_H__
+#define __SCB_REGISTERS_H__
 
 #include "types.h"
 
-/*** SCB REG macros ***/
+/*** SCB REGISTERS macros ***/
 
 // Peripheral base address.
 #define SCB     ((SCB_registers_t*) ((uint32_t) 0xE000ED00))
 
-/*** SCB REG structures ***/
+/*** SCB REGISTERS structures ***/
 
 /*!******************************************************************
  * \struct SCB_registers_t
@@ -32,4 +32,4 @@ typedef struct {
     volatile uint32_t SHPR3;    // SCB system handler priority register 3.
 } SCB_registers_t;
 
-#endif /* __SCB_REG_H__ */
+#endif /* __SCB_REGISTERS_H__ */

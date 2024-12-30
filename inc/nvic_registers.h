@@ -1,21 +1,21 @@
 /*
- * nvic_reg.h
+ * nvic_registers.h
  *
  *  Created on: 28 apr. 2018
  *      Author: Ludo
  */
 
-#ifndef __NVIC_REG_H__
-#define __NVIC_REG_H__
+#ifndef __NVIC_REGISTERS_H__
+#define __NVIC_REGISTERS_H__
 
 #include "types.h"
 
-/*** NVIC REG macros ***/
+/*** NVIC REGISTERS macros ***/
 
 // Peripheral base address.
 #define NVIC    ((NVIC_registers_t*) ((uint32_t) 0xE000E100))
 
-/*** NVIC REG structures ***/
+/*** NVIC REGISTERS structures ***/
 
 /*!******************************************************************
  * \struct NVIC_registers_t
@@ -33,4 +33,4 @@ typedef struct {
     volatile uint32_t IPR[8];           // Interrupt priority registers 0 to 7.
 } NVIC_registers_t;
 
-#endif /* __NVIC_REG_H__ */
+#endif /* __NVIC_REGISTERS_H__ */

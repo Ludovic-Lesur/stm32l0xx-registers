@@ -1,21 +1,21 @@
 /*
- * rtc_reg.h
+ * rtc_registers.h
  *
  *  Created on: 25 nov. 2018
  *      Author: Ludo
  */
 
-#ifndef __RTC_REG_H__
-#define __RTC_REG_H__
+#ifndef __RTC_REGISTERS_H__
+#define __RTC_REGISTERS_H__
 
 #include "types.h"
 
-/*** RTC REG macros ***/
+/*** RTC REGISTERS macros ***/
 
 // Peripheral base address.
 #define RTC     ((RTC_registers_t*) ((uint32_t) 0x40002800))
 
-/*** RTC REG structures ***/
+/*** RTC REGISTERS structures ***/
 
 /*!******************************************************************
  * \struct RTC_registers_t
@@ -49,4 +49,4 @@ typedef struct {
     volatile uint32_t BKP4R;        // RTC back-up register 4.
 } RTC_registers_t;
 
-#endif /* __RTC_REG_H__ */
+#endif /* __RTC_REGISTERS_H__ */

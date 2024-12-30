@@ -1,21 +1,21 @@
 /*
- * lptim_reg.h
+ * lptim_registers.h
  *
  *  Created on: 29 apr. 2018
  *      Author: Ludo
  */
 
-#ifndef __LPTIM_REG_H__
-#define __LPTIM_REG_H__
+#ifndef __LPTIM_REGISTERS_H__
+#define __LPTIM_REGISTERS_H__
 
 #include "types.h"
 
-/*** LPTIM REG macros ***/
+/*** LPTIM REGISTERS macros ***/
 
 // Peripheral base address.
 #define LPTIM1  ((LPTIM_registers_t*) ((uint32_t) 0x40007C00))
 
-/*** LPTIM REG structures ***/
+/*** LPTIM REGISTERS structures ***/
 
 /*!******************************************************************
  * \struct LPTIM_registers_t
@@ -32,4 +32,4 @@ typedef struct {
     volatile uint32_t CNT;      // LPTIM counter register.
 } LPTIM_registers_t;
 
-#endif /* __LPTIM_REG_H__ */
+#endif /* __LPTIM_REGISTERS_H__ */

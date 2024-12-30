@@ -1,21 +1,21 @@
 /*
- * dma_reg.h
+ * dma_registers.h
  *
  *  Created on: 08 may 2018
  *      Author: Ludo
  */
 
-#ifndef __DMA_REG_H__
-#define __DMA_REG_H__
+#ifndef __DMA_REGISTERS_H__
+#define __DMA_REGISTERS_H__
 
 #include "types.h"
 
-/*** DMA REG macros ***/
+/*** DMA REGISTERS macros ***/
 
 // Peripheral base address.
 #define DMA1    ((DMA_registers_t*) ((uint32_t) 0x40020000))
 
-/*** DMA REG structures ***/
+/*** DMA REGISTERS structures ***/
 
 /*!******************************************************************
  * \struct DMA_channel_registers_t
@@ -41,4 +41,4 @@ typedef struct {
     volatile uint32_t CSELR;                // DMA channel selection register.
 } DMA_registers_t;
 
-#endif /* __DMA_REG_H__ */
+#endif /* __DMA_REGISTERS_H__ */

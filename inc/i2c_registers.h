@@ -1,19 +1,19 @@
 /*
- * i2c_reg.h
+ * i2c_registers.h
  *
  *  Created on: 12 may 2018
  *      Author: Ludo
  */
 
-#ifndef __I2C_REG_H__
-#define __I2C_REG_H__
+#ifndef __I2C_REGISTERS_H__
+#define __I2C_REGISTERS_H__
 
 #ifndef STM32L0XX_REGISTERS_DISABLE_FLAGS_FILE
 #include "stm32l0xx_registers_flags.h"
 #endif
 #include "types.h"
 
-/*** I2C REG macros ***/
+/*** I2C REGISTERS macros ***/
 
 // Peripherals base address.
 #define I2C1    ((I2C_registers_t*) ((uint32_t) 0x40005400))
@@ -24,7 +24,7 @@
 #define I2C3    ((I2C_registers_t*) ((uint32_t) 0x40007800))
 #endif
 
-/*** I2C REG structures ***/
+/*** I2C REGISTERS structures ***/
 
 /*!******************************************************************
  * \struct I2C_registers_t
@@ -44,4 +44,4 @@ typedef struct {
     volatile uint32_t TXDR;         // I2C transmit data register.
 } I2C_registers_t;
 
-#endif /* __I2C_REG_H__ */
+#endif /* __I2C_REGISTERS_H__ */

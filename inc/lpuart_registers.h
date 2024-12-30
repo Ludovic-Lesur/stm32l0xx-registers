@@ -1,21 +1,21 @@
 /*
- * lpuart_reg.h
+ * lpuart_registers.h
  *
  *  Created on: 28 apr. 2018
  *      Author: Ludo
  */
 
-#ifndef __LPUART_REG_H__
-#define __LPUART_REG_H__
+#ifndef __LPUART_REGISTERS_H__
+#define __LPUART_REGISTERS_H__
 
 #include "types.h"
 
-/*** LPUART REG macros ***/
+/*** LPUART REGISTERS macros ***/
 
 // Peripheral base address.
 #define LPUART1     ((LPUART_registers_t*) ((uint32_t) 0x40004800))
 
-/*** LPUART REG structures ***/
+/*** LPUART REGISTERS structures ***/
 
 /*!******************************************************************
  * \struct LPUART_registers_t
@@ -34,4 +34,4 @@ typedef struct {
     volatile uint32_t TDR;          // LPUART transmit data register.
 } LPUART_registers_t;
 
-#endif /* __LPUART_REG_H__ */
+#endif /* __LPUART_REGISTERS_H__ */

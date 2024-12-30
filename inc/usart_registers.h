@@ -1,19 +1,19 @@
 /*
- * usart_reg.h
+ * usart_registers.h
  *
  *  Created on: 11 aug. 2018
  *      Author: Ludo
  */
 
-#ifndef __USART_REG_H__
-#define __USART_REG_H__
+#ifndef __USART_REGISTERS_H__
+#define __USART_REGISTERS_H__
 
 #ifndef STM32L0XX_REGISTERS_DISABLE_FLAGS_FILE
 #include "stm32l0xx_registers_flags.h"
 #endif
 #include "types.h"
 
-/*** USART REG macros ***/
+/*** USART REGISTERS macros ***/
 
 // Peripherals base address.
 #define USART2  ((USART_registers_t*) ((uint32_t) 0x40004400))
@@ -25,7 +25,7 @@
 #define USART5  ((USART_registers_t*) ((uint32_t) 0x40005000))
 #endif
 
-/*** USART REG structures ***/
+/*** USART REGISTERS structures ***/
 
 /*!******************************************************************
  * \struct USART_registers_t
@@ -45,4 +45,4 @@ typedef struct {
     volatile uint32_t TDR;      // USART transmit data register.
 } USART_registers_t;
 
-#endif /* __USART_REG_H__ */
+#endif /* __USART_REGISTERS_H__ */

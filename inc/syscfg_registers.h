@@ -1,21 +1,21 @@
 /*
- * syscfg_reg.h
+ * syscfg_registers.h
  *
  *  Created on: 18 jun. 2018
  *      Author: Ludo
  */
 
-#ifndef __SYSCFG_REG_H__
-#define __SYSCFG_REG_H__
+#ifndef __SYSCFG_REGISTERS_H__
+#define __SYSCFG_REGISTERS_H__
 
 #include "types.h"
 
-/*** SYSCFG REG macros ***/
+/*** SYSCFG REGISTERS macros ***/
 
 // Peripheral base address.
 #define SYSCFG  ((SYSCFG_registers_t*) ((uint32_t) 0x40010000))
 
-/*** SYSCFG REG structures ***/
+/*** SYSCFG REGISTERS structures ***/
 
 /*!******************************************************************
  * \struct SYSCFG_registers_t
@@ -30,4 +30,4 @@ typedef struct {
     volatile uint32_t CFGR3;        // SYSCFG control and status register.
 } SYSCFG_registers_t;
 
-#endif /* __SYSCFG_REG_H__ */
+#endif /* __SYSCFG_REGISTERS_H__ */
