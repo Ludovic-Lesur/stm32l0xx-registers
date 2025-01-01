@@ -22,14 +22,14 @@
  * \brief LPTIM registers map.
  *******************************************************************/
 typedef struct {
-    volatile uint32_t ISR;      // LPTIM interrupt and status register.
-    volatile uint32_t ICR;      // LPTIM interrupt clear register.
-    volatile uint32_t IER;      // LPTIM interrupt enable register.
-    volatile uint32_t CFGR;     // LPTIM configuration register.
-    volatile uint32_t CR;       // LPTIM control register.
-    volatile uint32_t CMP;      // LPTIM compare register.
-    volatile uint32_t ARR;      // LPTIM autoreload register.
-    volatile uint32_t CNT;      // LPTIM counter register.
+    volatile uint32_t ISR;
+    volatile uint32_t ICR;
+    volatile uint32_t IER;
+    volatile uint32_t CFGR;
+    volatile uint32_t CR;
+    volatile uint32_t CMP;
+    volatile uint32_t ARR;
+    volatile uint32_t CNT;
 } LPTIM_registers_t;
 
 #endif /* __LPTIM_REGISTERS_H__ */

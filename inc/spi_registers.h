@@ -28,15 +28,15 @@
  * \brief SPI registers map.
  *******************************************************************/
 typedef struct {
-    volatile uint32_t CR1;      // SPI control register 1.
-    volatile uint32_t CR2;      // SPI control register 2.
-    volatile uint32_t SR;       // SPI status register.
-    volatile uint32_t DR;       // SPI data register.
-    volatile uint32_t CRCPR;    // SPI CRC polynomial register.
-    volatile uint32_t RXCRCR;   // SPI RX CRC register.
-    volatile uint32_t TXCRCR;   // SPI TX CRC register.
-    volatile uint32_t I2SCFGR;  // SPI I2S configuration register.
-    volatile uint32_t I2SPR;    // SPI I2S prescaler register.
+    volatile uint32_t CR1;
+    volatile uint32_t CR2;
+    volatile uint32_t SR;
+    volatile uint32_t DR;
+    volatile uint32_t CRCPR;
+    volatile uint32_t RXCRCR;
+    volatile uint32_t TXCRCR;
+    volatile uint32_t I2SCFGR;
+    volatile uint32_t I2SPR;
 } SPI_registers_t;
 
 #endif /* __SPI_REGISTERS_H__ */

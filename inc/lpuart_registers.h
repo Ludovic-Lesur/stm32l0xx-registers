@@ -22,16 +22,16 @@
  * \brief LPUART registers map.
  *******************************************************************/
 typedef struct {
-    volatile uint32_t CR1;          // LPUART control register 1.
-    volatile uint32_t CR2;          // LPUART control register 2.
-    volatile uint32_t CR3;          // LPUART control register 3.
-    volatile uint32_t BRR;          // LPUART baud rate register.
-    volatile uint32_t RESERVED0[2]; // Reserved 0x10-0x14.
-    volatile uint32_t RQR;          // LPUART request register.
-    volatile uint32_t ISR;          // LPUART interrupt and status register.
-    volatile uint32_t ICR;          // LPUART interrupt flag clear register.
-    volatile uint32_t RDR;          // LPUART receive data register.
-    volatile uint32_t TDR;          // LPUART transmit data register.
+    volatile uint32_t CR1;
+    volatile uint32_t CR2;
+    volatile uint32_t CR3;
+    volatile uint32_t BRR;
+    volatile uint32_t RESERVED0[2];
+    volatile uint32_t RQR;
+    volatile uint32_t ISR;
+    volatile uint32_t ICR;
+    volatile uint32_t RDR;
+    volatile uint32_t TDR;
 } LPUART_registers_t;
 
 #endif /* __LPUART_REGISTERS_H__ */

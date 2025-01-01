@@ -22,8 +22,8 @@
  * \brief PWR registers map.
  *******************************************************************/
 typedef struct {
-    volatile uint32_t CR;   // Power control register.
-    volatile uint32_t CSR;  // Power control and status register.
+    volatile uint32_t CR;
+    volatile uint32_t CSR;
 } PWR_registers_t;
 
 #endif /* __PWR_REGISTERS_H__ */

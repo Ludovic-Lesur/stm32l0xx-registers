@@ -22,11 +22,11 @@
  * \brief IWDG registers map.
  *******************************************************************/
 typedef struct {
-    volatile uint32_t KR;       // IWDG key register.
-    volatile uint32_t PR;       // IWDG prescaler register.
-    volatile uint32_t RLR;      // IWDG reload register.
-    volatile uint32_t SR;       // IWDG status register.
-    volatile uint32_t WINR;     // IWDG window register.
+    volatile uint32_t KR;
+    volatile uint32_t PR;
+    volatile uint32_t RLR;
+    volatile uint32_t SR;
+    volatile uint32_t WINR;
 } IWDG_registers_t;
 
 #endif /* __IWDG_REGISTERS_H___ */

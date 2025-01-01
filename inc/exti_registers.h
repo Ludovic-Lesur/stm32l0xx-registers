@@ -22,12 +22,12 @@
  * \brief EXTI registers map.
  *******************************************************************/
 typedef struct {
-    volatile uint32_t IMR;      // EXTI interrupt mask register.
-    volatile uint32_t EMR;      // EXTI event mask register.
-    volatile uint32_t RTSR;     // EXTI rising edge trigger selection register.
-    volatile uint32_t FTSR;     // EXTI falling edge trigger selection register.
-    volatile uint32_t SWIER;    // EXTI software interrupt event register.
-    volatile uint32_t PR;       // EXTI pending register.
+    volatile uint32_t IMR;
+    volatile uint32_t EMR;
+    volatile uint32_t RTSR;
+    volatile uint32_t FTSR;
+    volatile uint32_t SWIER;
+    volatile uint32_t PR;
 } EXTI_registers_t;
 
 #endif /* __EXTI_REGISTERS_H__ */

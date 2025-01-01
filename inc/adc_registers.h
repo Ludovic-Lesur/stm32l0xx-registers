@@ -34,23 +34,23 @@
  * \brief ADC registers map.
  *******************************************************************/
 typedef struct {
-    volatile uint32_t ISR;              // ADC interrupt and status register.
-    volatile uint32_t IER;              // ADC interrupt enable register.
-    volatile uint32_t CR;               // ADC control register.
-    volatile uint32_t CFGR1;            // ADC configuration register 1.
-    volatile uint32_t CFGR2;            // ADC configuration register 2
-    volatile uint32_t SMPR;             // ADC sampling time register.
-    volatile uint32_t RESERVED0;        // Reserved 0x18.
-    volatile uint32_t RESERVED1;        // Reserved 0x1C.
-    volatile uint32_t TR;               // ADC watchdog threshold register.
-    volatile uint32_t RESERVED2;        // Reserved 0x24.
-    volatile uint32_t CHSELR;           // ADC channel selection register.
-    volatile uint32_t RESERVED3[5];     // Reserved 0x2C.
-    volatile uint32_t DR;               // ADC data register.
-    volatile uint32_t RESERVED4[28];    // Reserved 0x44.
-    volatile uint32_t CALFACT;          // ADC calibration factor register.
-    volatile uint32_t RESERVED5[148];   // Reserved 0xB8.
-    volatile uint32_t CCR;              // ADC common configuration register.
+    volatile uint32_t ISR;
+    volatile uint32_t IER;
+    volatile uint32_t CR;
+    volatile uint32_t CFGR1;
+    volatile uint32_t CFGR2;
+    volatile uint32_t SMPR;
+    volatile uint32_t RESERVED0;
+    volatile uint32_t RESERVED1;
+    volatile uint32_t TR;
+    volatile uint32_t RESERVED2;
+    volatile uint32_t CHSELR;
+    volatile uint32_t RESERVED3[5];
+    volatile uint32_t DR;
+    volatile uint32_t RESERVED4[28];
+    volatile uint32_t CALFACT;
+    volatile uint32_t RESERVED5[148];
+    volatile uint32_t CCR;
 } ADC_registers_t;
 
 #endif /* __ADC_REGISTERS_H__ */

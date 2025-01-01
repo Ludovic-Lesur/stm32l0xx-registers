@@ -22,14 +22,14 @@
  * \brief SCB registers map.
  *******************************************************************/
 typedef struct {
-    volatile uint32_t CPUID;    // SCB CPUID register.
-    volatile uint32_t ICSR;     // SCB interrupt control and state register.
-    volatile uint32_t VTOR;     // SCB vector table offset register.
-    volatile uint32_t AIRCR;    // SCB application and reset control register.
-    volatile uint32_t SCR;      // SCB system control register.
-    volatile uint32_t CCR;      // SCB configuration and control register.
-    volatile uint32_t SHPR2;    // SCB system handler priority register 2.
-    volatile uint32_t SHPR3;    // SCB system handler priority register 3.
+    volatile uint32_t CPUID;
+    volatile uint32_t ICSR;
+    volatile uint32_t VTOR;
+    volatile uint32_t AIRCR;
+    volatile uint32_t SCR;
+    volatile uint32_t CCR;
+    volatile uint32_t SHPR2;
+    volatile uint32_t SHPR3;
 } SCB_registers_t;
 
 #endif /* __SCB_REGISTERS_H__ */

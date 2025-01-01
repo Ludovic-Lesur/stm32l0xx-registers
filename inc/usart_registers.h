@@ -32,17 +32,17 @@
  * \brief USART registers map.
  *******************************************************************/
 typedef struct {
-    volatile uint32_t CR1;      // USART control register 1.
-    volatile uint32_t CR2;      // USART control register 2.
-    volatile uint32_t CR3;      // USART control register 3.
-    volatile uint32_t BRR;      // USART baud rate register.
-    volatile uint32_t GTPR;     // USART guard time and prescaler register.
-    volatile uint32_t RTOR;     // USART receiver timeout register.
-    volatile uint32_t RQR;      // USART request register.
-    volatile uint32_t ISR;      // USART interrupt and status register.
-    volatile uint32_t ICR;      // USART interrupt flag clear register.
-    volatile uint32_t RDR;      // USART receive data register.
-    volatile uint32_t TDR;      // USART transmit data register.
+    volatile uint32_t CR1;
+    volatile uint32_t CR2;
+    volatile uint32_t CR3;
+    volatile uint32_t BRR;
+    volatile uint32_t GTPR;
+    volatile uint32_t RTOR;
+    volatile uint32_t RQR;
+    volatile uint32_t ISR;
+    volatile uint32_t ICR;
+    volatile uint32_t RDR;
+    volatile uint32_t TDR;
 } USART_registers_t;
 
 #endif /* __USART_REGISTERS_H__ */

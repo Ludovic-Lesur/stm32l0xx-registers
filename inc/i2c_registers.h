@@ -31,17 +31,17 @@
  * \brief I2C registers map.
  *******************************************************************/
 typedef struct {
-    volatile uint32_t CR1;          // I2C control register 1.
-    volatile uint32_t CR2;          // I2C control register 2.
-    volatile uint32_t OAR1;         // I2C own address 1 register.
-    volatile uint32_t OAR2;         // I2C own address 2 register.
-    volatile uint32_t TIMINGR;      // I2C timing register.
-    volatile uint32_t TIMEOUTR;     // I2C timeout register.
-    volatile uint32_t ISR;          // I2C interrupt and status register.
-    volatile uint32_t ICR;          // I2C interrupt clear register.
-    volatile uint32_t PECR;         // I2C PEC register.
-    volatile uint32_t RXDR;         // I2C receive data register.
-    volatile uint32_t TXDR;         // I2C transmit data register.
+    volatile uint32_t CR1;
+    volatile uint32_t CR2;
+    volatile uint32_t OAR1;
+    volatile uint32_t OAR2;
+    volatile uint32_t TIMINGR;
+    volatile uint32_t TIMEOUTR;
+    volatile uint32_t ISR;
+    volatile uint32_t ICR;
+    volatile uint32_t PECR;
+    volatile uint32_t RXDR;
+    volatile uint32_t TXDR;
 } I2C_registers_t;
 
 #endif /* __I2C_REGISTERS_H__ */

@@ -22,27 +22,27 @@
  * \brief RCC registers map.
  *******************************************************************/
 typedef struct {
-    volatile uint32_t CR;           // RCC clock control register.
-    volatile uint32_t ICSCR;        // RCC internal clock sources calibration register.
-    volatile uint32_t RESERVED0;    // Reserved 0x08.
-    volatile uint32_t CFGR;         // RCC clock configuration register.
-    volatile uint32_t CIER;         // RCC clock interrupt enable register.
-    volatile uint32_t CIFR;         // RCC clock interrupt flag register.
-    volatile uint32_t CICR;         // RCC clock interrupt clear register.
-    volatile uint32_t IOPRSTR;      // RCC GPIO reset register.
-    volatile uint32_t AHBRSTR;      // RCC AHB peripheral reset register.
-    volatile uint32_t APB2RSTR;     // RCC APB2 peripheral reset register.
-    volatile uint32_t APB1RSTR;     // RCC APB1 peripheral reset register.
-    volatile uint32_t IOPENR;       // RCC GPIO clock enable register.
-    volatile uint32_t AHBENR;       // RCC AHB peripheral clock enable register.
-    volatile uint32_t APB2ENR;      // RCC APB2 peripheral clock enable register.
-    volatile uint32_t APB1ENR;      // RCC APB1 peripheral clock enable register.
-    volatile uint32_t IOPSMENR;     // RCC GPIO clock enable in sleep mode register.
-    volatile uint32_t AHBSMENR;     // RCC AHB peripheral clock enable in sleep mode register.
-    volatile uint32_t APB2SMENR;    // RCC APB2 peripheral clock enable in sleep mode register.
-    volatile uint32_t APB1SMENR;    // RCC APB1 peripheral clock enable in sleep mode register.
-    volatile uint32_t CCIPR;        // RCC clock configuration register.
-    volatile uint32_t CSR;          // RCC control and status register.
+    volatile uint32_t CR;
+    volatile uint32_t ICSCR;
+    volatile uint32_t RESERVED0;
+    volatile uint32_t CFGR;
+    volatile uint32_t CIER;
+    volatile uint32_t CIFR;
+    volatile uint32_t CICR;
+    volatile uint32_t IOPRSTR;
+    volatile uint32_t AHBRSTR;
+    volatile uint32_t APB2RSTR;
+    volatile uint32_t APB1RSTR;
+    volatile uint32_t IOPENR;
+    volatile uint32_t AHBENR;
+    volatile uint32_t APB2ENR;
+    volatile uint32_t APB1ENR;
+    volatile uint32_t IOPSMENR;
+    volatile uint32_t AHBSMENR;
+    volatile uint32_t APB2SMENR;
+    volatile uint32_t APB1SMENR;
+    volatile uint32_t CCIPR;
+    volatile uint32_t CSR;
 } RCC_registers_t;
 
 #endif /* __RCC_REGISTERS_H__ */

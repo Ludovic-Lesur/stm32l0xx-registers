@@ -22,27 +22,27 @@
  * \brief AES registers map.
  *******************************************************************/
 typedef struct {
-    volatile uint32_t CR;               // AES control register.
-    volatile uint32_t SR;               // AES status register.
-    volatile uint32_t DINR;             // AES input data register.
-    volatile uint32_t DOUTR;            // AES output data register.
+    volatile uint32_t CR;
+    volatile uint32_t SR;
+    volatile uint32_t DINR;
+    volatile uint32_t DOUTR;
     union {
         struct {
-            volatile uint32_t KEYR0;    // AES key register 0.
-            volatile uint32_t KEYR1;    // AES key register 1.
-            volatile uint32_t KEYR2;    // AES key register 2.
-            volatile uint32_t KEYR3;    // AES key register 3.
+            volatile uint32_t KEYR0;
+            volatile uint32_t KEYR1;
+            volatile uint32_t KEYR2;
+            volatile uint32_t KEYR3;
         };
-        volatile uint32_t KEYR[4];      // AES key registers.
+        volatile uint32_t KEYR[4];
     };
     union {
         struct {
-            volatile uint32_t IVR0;     // AES initialization vector register 0.
-            volatile uint32_t IVR1;     // AES initialization vector register 1.
-            volatile uint32_t IVR2;     // AES initialization vector register 2.
-            volatile uint32_t IVR3;     // AES initialization vector register 3.
+            volatile uint32_t IVR0;
+            volatile uint32_t IVR1;
+            volatile uint32_t IVR2;
+            volatile uint32_t IVR3;
         };
-        volatile uint32_t IVR[4];       // AES initialization vector registers.
+        volatile uint32_t IVR[4];
     };
 } AES_registers_t;
 

@@ -22,31 +22,31 @@
  * \brief RTC registers map.
  *******************************************************************/
 typedef struct {
-    volatile uint32_t TR;           // RTC time register.
-    volatile uint32_t DR;           // RTC date register.
-    volatile uint32_t CR;           // RTC control register.
-    volatile uint32_t ISR;          // RTC interrupt and status register.
-    volatile uint32_t PRER;         // RTC prescaler register.
-    volatile uint32_t WUTR;         // RTC write unlock register.
-    volatile uint32_t RESERVED0;    // Reserved 0x18.
-    volatile uint32_t ALRMAR;       // RTC alarm A register.
-    volatile uint32_t ALRMBR;       // RTC alarm B register.
-    volatile uint32_t WPR;          // RTC write protect register.
-    volatile uint32_t SSR;          // RTC sub-seconds register.
-    volatile uint32_t SHIFTR;       // RTC shift control register.
-    volatile uint32_t TSTR;         // RTC timestamp time register.
-    volatile uint32_t TSDR;         // RTC timestamp date register.
-    volatile uint32_t TSSSR;        // RTC timestamp sub-seconds register.
-    volatile uint32_t CALR;         // RTC calibration register.
-    volatile uint32_t TAMPCR;       // RTC tamper configuration register.
-    volatile uint32_t ALRMASSR;     // RTC alarm A sub-seconds register.
-    volatile uint32_t ALRMBSSR;     // RTC alarm B sub-seconds register.
-    volatile uint32_t OR;           // RTC option register.
-    volatile uint32_t BKP0R;        // RTC back-up register 0.
-    volatile uint32_t BKP1R;        // RTC back-up register 1.
-    volatile uint32_t BKP2R;        // RTC back-up register 2.
-    volatile uint32_t BKP3R;        // RTC back-up register 3.
-    volatile uint32_t BKP4R;        // RTC back-up register 4.
+    volatile uint32_t TR;
+    volatile uint32_t DR;
+    volatile uint32_t CR;
+    volatile uint32_t ISR;
+    volatile uint32_t PRER;
+    volatile uint32_t WUTR;
+    volatile uint32_t RESERVED0;
+    volatile uint32_t ALRMAR;
+    volatile uint32_t ALRMBR;
+    volatile uint32_t WPR;
+    volatile uint32_t SSR;
+    volatile uint32_t SHIFTR;
+    volatile uint32_t TSTR;
+    volatile uint32_t TSDR;
+    volatile uint32_t TSSSR;
+    volatile uint32_t CALR;
+    volatile uint32_t TAMPCR;
+    volatile uint32_t ALRMASSR;
+    volatile uint32_t ALRMBSSR;
+    volatile uint32_t OR;
+    volatile uint32_t BKP0R;
+    volatile uint32_t BKP1R;
+    volatile uint32_t BKP2R;
+    volatile uint32_t BKP3R;
+    volatile uint32_t BKP4R;
 } RTC_registers_t;
 
 #endif /* __RTC_REGISTERS_H__ */
