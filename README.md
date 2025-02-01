@@ -2,6 +2,12 @@
 
 This repository contains the **registers address** definition of the STM32L0xx MCUs peripherals.
 
+# Dependencies
+
+The driver relies on:
+
+* An external `types.h` header file defining the **standard C types** of the targeted MCU.
+
 # Compilation flags
 
 | **Flag name** | **Value** | **Description** |
