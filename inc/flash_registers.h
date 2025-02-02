@@ -8,29 +8,12 @@
 #ifndef __FLASH_REGISTERS_H__
 #define __FLASH_REGISTERS_H__
 
-#ifndef STM32L0XX_REGISTERS_DISABLE_FLAGS_FILE
-#include "stm32l0xx_registers_flags.h"
-#endif
 #include "types.h"
 
 /*** FLASH REGISTERS macros ***/
 
 // Peripheral base address.
-#define FLASH                   ((FLASH_registers_t*) ((uint32_t) 0x40022000))
-// EEPROM base address and size.
-#define EEPROM_START_ADDRESS    (uint32_t) 0x08080000
-#if (STM32L0XX_REGISTERS_MCU_CATEGORY == 1)
-#define EEPROM_SIZE_BYTES       512
-#endif
-#if (STM32L0XX_REGISTERS_MCU_CATEGORY == 2)
-#define EEPROM_SIZE_BYTES       1024
-#endif
-#if (STM32L0XX_REGISTERS_MCU_CATEGORY == 3)
-#define EEPROM_SIZE_BYTES       2048
-#endif
-#if (STM32L0XX_REGISTERS_MCU_CATEGORY == 5)
-#define EEPROM_SIZE_BYTES       6144
-#endif
+#define FLASH   ((FLASH_registers_t*) ((uint32_t) 0x40022000))
 
 /*** FLASH REGISTERS structures ***/
 
