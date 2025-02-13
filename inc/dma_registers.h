@@ -36,7 +36,7 @@ typedef struct {
 typedef struct {
     volatile uint32_t ISR;
     volatile uint32_t IFCR;
-    volatile DMA_channel_registers_t CH[7];
+    volatile DMA_channel_registers_t CHx[7];
     volatile uint32_t RESERVED7[5];
     volatile uint32_t CSELR;
 } DMA_registers_t;
