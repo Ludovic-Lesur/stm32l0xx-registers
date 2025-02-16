@@ -49,7 +49,6 @@ typedef struct {
         };
         volatile uint32_t CCMRx[2];
     };
-    
     volatile uint32_t CCER;
     volatile uint32_t CNT;
     volatile uint32_t PSC;
