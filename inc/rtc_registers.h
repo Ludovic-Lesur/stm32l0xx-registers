@@ -5,6 +5,12 @@
  *      Author: Ludo
  */
 
+#ifndef STM32L0XX_REGISTERS_DISABLE_FLAGS_FILE
+#include "stm32l0xx_registers_flags.h"
+#endif
+
+#ifndef STM32L0XX_REGISTERS_DISABLE
+
 #ifndef __RTC_REGISTERS_H__
 #define __RTC_REGISTERS_H__
 
@@ -50,3 +56,5 @@ typedef struct {
 } RTC_registers_t;
 
 #endif /* __RTC_REGISTERS_H__ */
+
+#endif /* STM32L0XX_REGISTERS_DISABLE */

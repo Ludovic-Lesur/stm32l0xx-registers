@@ -5,6 +5,12 @@
  *      Author: Ludo
  */
 
+#ifndef STM32L0XX_REGISTERS_DISABLE_FLAGS_FILE
+#include "stm32l0xx_registers_flags.h"
+#endif
+
+#ifndef STM32L0XX_REGISTERS_DISABLE
+
 #ifndef __AES_REGISTERS_H__
 #define __AES_REGISTERS_H__
 
@@ -47,3 +53,5 @@ typedef struct {
 } AES_registers_t;
 
 #endif /* __AES_REGISTERS_H__ */
+
+#endif /* STM32L0XX_REGISTERS_DISABLE */

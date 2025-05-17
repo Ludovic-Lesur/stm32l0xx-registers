@@ -5,6 +5,12 @@
  *      Author: Ludo
  */
 
+#ifndef STM32L0XX_REGISTERS_DISABLE_FLAGS_FILE
+#include "stm32l0xx_registers_flags.h"
+#endif
+
+#ifndef STM32L0XX_REGISTERS_DISABLE
+
 #ifndef __IWDG_REGISTERS_H__
 #define __IWDG_REGISTERS_H__
 
@@ -30,3 +36,5 @@ typedef struct {
 } IWDG_registers_t;
 
 #endif /* __IWDG_REGISTERS_H___ */
+
+#endif /* STM32L0XX_REGISTERS_DISABLE */
